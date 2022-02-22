@@ -1,0 +1,19 @@
+laravel new "nombrepj" --jet 
+npm install
+npm run dev
+
+Opcional (error al correr las migraciones)
+AppServiceProvider.php 
+{
+	boot()
+	Schema::defaultStringLength(191);
+}
+
+php artisan migrate 
+php artisan serve
+
+Cambiar login Email => username
+fortify.php (abrir los request al login)
+FortifyServiceProvider.php
+login.blade.php
+
